@@ -111,17 +111,23 @@ import java.util.ArrayList;
         //finds the first instance of a triangle num with
         //more than 100 factors
         public void greaterThanOneHundred() {
-            Node temp = head;
-            int flag = 0;
+            Node temp = head; 
+            
             while (temp != null) {
                 if (temp.factorCount >= 100) {
-                    System.out.println("Triangle number: " + temp.triNum +
-                            " has more than 100 factors");
-                    System.out.println("Number of factors: " + temp.factorCount);
+                    System.out.println(" \nThe first triangle number with more"
+                            + " than 100 factors is " + temp.triNum);
+                    System.out.println(temp.triNum + " has " + temp.factorCount +
+                            " factors: ");
+                    for (int i=0; i<temp.factorCount; i++) {
+                        System.out.print(temp.factors[i] + ", ");
+                    }                           
                     break;
+                 
                 }
                 temp = temp.next;
             }
+            
             
         }
     

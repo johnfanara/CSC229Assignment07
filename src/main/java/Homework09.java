@@ -6,10 +6,15 @@ public class Homework09 {
     public static void main(String[] args) {
         LinkedList triList = new LinkedList();
         
-        triList.getTriangleNums(1000);     
-        //triList.printList();
+        triList.getTriangleNums(7);     
+        triList.printList();
         
-        triList.greaterThanOneHundred();
+        LinkedList triList2 = new LinkedList();
+        triList2.getTriangleNums(1000);
+        triList2.greaterThanOneHundred();
+        
+       
+        
         
     }
 }
